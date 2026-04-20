@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walking MILO - 밀로와 함께 걸어요</title>
+    <link rel="icon" type="image/png" href="app_icon.png">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            color: #333;
+            background: #fff;
+        }
+
+        /* Hero */
+        .hero {
+            text-align: center;
+            padding: 80px 20px 60px;
+            background: linear-gradient(180deg, #D6EEFF 0%, #ffffff 100%);
+        }
+        .hero img.icon {
+            width: 120px;
+            height: 120px;
+            border-radius: 28px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+        }
+        .hero h1 {
+            font-size: 36px;
+            font-weight: 800;
+            margin-top: 24px;
+            letter-spacing: -0.5px;
+        }
+        .hero p.tagline {
+            font-size: 18px;
+            color: #666;
+            margin-top: 12px;
+        }
+        .hero .download-btn {
+            display: inline-block;
+            margin-top: 32px;
+            padding: 16px 40px;
+            background: #000;
+            color: #fff;
+            border-radius: 14px;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+        .hero .download-btn:hover { transform: scale(1.05); }
+        .hero .milo-img {
+            width: 240px;
+            margin-top: 40px;
+        }
+
+        /* Features */
+        .features {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+        .features h2 {
+            text-align: center;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+        .feature-card {
+            padding: 28px;
+            background: #f8f9fa;
+            border-radius: 16px;
+        }
+        .feature-card .emoji {
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+        .feature-card h3 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .feature-card p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid #eee;
+            color: #999;
+            font-size: 13px;
+        }
+        footer a {
+            color: #666;
+            text-decoration: none;
+            margin: 0 12px;
+        }
+        footer a:hover { text-decoration: underline; }
+        footer .links { margin-bottom: 16px; }
+
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 28px; }
+            .feature-grid { grid-template-columns: 1fr; }
+            .hero .milo-img { width: 180px; }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <img src="app_icon.png" alt="Walking MILO" class="icon">
+        <h1>Walking MILO</h1>
+        <p class="tagline">밀로와 함께 걸어요</p>
+        <a href="#" class="download-btn">App Store에서 다운로드</a>
+        <br>
+        <img src="milo_hero.png" alt="MILO" class="milo-img">
+    </section>
+
+    <section class="features">
+        <h2>밀로와 함께하는 산책</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="emoji">🐾</div>
+                <h3>귀여운 밀로</h3>
+                <p>걸음 수에 따라 밀로의 표정이 변해요. 많이 걸을수록 밀로가 행복해져요.</p>
+            </div>
+            <div class="feature-card">
+                <div class="emoji">👟</div>
+                <h3>걸음 수 추적</h3>
+                <p>HealthKit 연동으로 자동 걸음 수 측정. 일일 목표를 설정하고 달성해보세요.</p>
+            </div>
+            <div class="feature-card">
+                <div class="emoji">🎨</div>
+                <h3>다양한 스킨</h3>
+                <p>게으른 밀로, 힐링 밀로, 츤데레 밀로 등 개성 넘치는 밀로를 만나보세요.</p>
+            </div>
+            <div class="feature-card">
+                <div class="emoji">💰</div>
+                <h3>코인 & 성장</h3>
+                <p>걸을수록 코인과 경험치를 얻어요. 레벨업하고 새로운 콘텐츠를 해금하세요.</p>
+            </div>
+            <div class="feature-card">
+                <div class="emoji">❤️</div>
+                <h3>친밀도 시스템</h3>
+                <p>밀로와 함께 시간을 보낼수록 친밀도가 올라가고, 특별한 선물을 받을 수 있어요.</p>
+            </div>
+            <div class="feature-card">
+                <div class="emoji">📅</div>
+                <h3>기록 & 캘린더</h3>
+                <p>매일의 걸음 기록을 캘린더로 한눈에 확인. 연속 달성 스트릭도 추적해요.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="links">
+            <a href="privacy.html">개인정보처리방침</a>
+            <a href="support.html">고객지원</a>
+        </div>
+        <p>&copy; 2026 Jaewhan Namkoong. All rights reserved.</p>
+    </footer>
+</body>
+</html>
